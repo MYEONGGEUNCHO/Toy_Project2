@@ -1,0 +1,23 @@
+### Multiple models
+### Multiple models
+### Reduce duplication
+POST http://127.0.0.1:8000/user/
+
+{
+  "username": "주윤",
+  "email": "user@example.com",
+  "full_name": "박주윤",
+  "password": "1234"
+}
+
+### Union or anyOf
+GET http://127.0.0.1:8000/items/item1
+###
+GET http://127.0.0.1:8000/items/item2
+
+
+### List of models
+GET http://127.0.0.1:8000/items/
+
+### Response with arbitrary dict
+GET http://127.0.0.1:8000/keyword-weights/

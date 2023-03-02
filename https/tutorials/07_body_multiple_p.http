@@ -1,0 +1,68 @@
+### Request Body
+PUT http://127.0.0.1:8000/items/700?q=hi
+
+{
+    "name": "Foo",
+    "description": "An optional description",
+    "price": 45.2,
+    "tax": 3.5
+}
+
+###
+PUT http://127.0.0.1:8000/items/123
+
+### Singular values in body
+PUT http://127.0.0.1:8000/items/123
+
+{
+  "item": {
+    "name": "Foo",
+    "description": "The pretender",
+    "price": 42.0,
+    "tax": 3.2
+  },
+  "user": {
+    "username": "dave",
+    "full_name": "Dave Grohl"
+  },
+  "importance": 5
+}
+
+### Multiple body params and query
+PUT http://127.0.0.1:8000/items/123?q=1234
+
+{
+  "item": {
+    "name": "Foo",
+    "description": "The pretender",
+    "price": 42.0,
+    "tax": 3.2
+  },
+  "user": {
+    "username": "dave",
+    "full_name": "Dave Grohl"
+  },
+  "importance": 5
+}
+
+### Embed a single body parameter
+PUT http://127.0.0.1:8000/items/700
+
+{
+    "item": {
+        "name": "Foo",
+        "description": "The pretender",
+        "price": 42.0,
+        "tax": 3.2
+    }
+}
+
+### 
+PUT http://127.0.0.1:8000/items/700
+
+{
+    "name": "Foo",
+    "description": "The pretender",
+    "price": 42.0,
+    "tax": 3.2
+}

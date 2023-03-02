@@ -1,0 +1,8 @@
+### Dependencies
+### First Steps
+### Classes as Dependencies
+GET http://127.0.0.1:8000/items/?q=가나&skip=1&limit=100
+
+### Sub-dependencies
+GET http://127.0.0.1:8000/items/?q=가나
+

@@ -1,0 +1,39 @@
+### Request Body
+POST http://127.0.0.1:8000/items/
+
+{
+    "name": "Foo",
+    "description": "An optional description",
+    "price": 45.2,
+    "tax": 3.5
+}
+
+### Use the model
+POST http://127.0.0.1:8000/items/
+
+{
+    "name": "Foo",
+    "description": "An optional description",
+    "price": 45.2,
+    "tax": 3.5
+}
+
+### Request body + path parameters
+PUT http://127.0.0.1:8000/items/1/
+
+{
+    "name": "Foo",
+    "description": "An optional description",
+    "price": 45.2,
+    "tax": 3.5
+}
+
+### Request body + path + query parameters
+PUT http://127.0.0.1:8000/items/1/
+
+{
+    "name": "Foo",
+    "description": "An optional description",
+    "price": 45.2,
+    "tax": 3.5
+}

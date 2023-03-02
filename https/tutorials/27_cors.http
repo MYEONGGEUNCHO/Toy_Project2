@@ -1,0 +1,14 @@
+### 
+GET http://localhost.tiangolo.com/
+
+### 
+GET https://localhost.tiangolo.com/
+
+### 
+GET http://localhost/
+
+### 
+GET http://localhost:8080/
+
+###
+GET http://127.0.0.1:8000/

@@ -1,0 +1,31 @@
+### Path Parameters and Numeric Validations
+GET GET http://127.0.0.1:8000/items/1234
+###
+GET http://127.0.0.1:8000/items/1234?q=1234
+
+### Declare metadata
+GET http://127.0.0.1:8000/items/1
+
+###
+GET http://127.0.0.1:8000/items/1234?item-query=1234
+
+### Order the parameters as you need
+GET http://127.0.0.1:8000/items/1234?q=1234
+
+### Number validations: greater than or equal
+GET http://127.0.0.1:8000/items/1234?q=1234
+
+### Error
+GET http://127.0.0.1:8000/items/0?q=1234
+
+### Number validations: greater than and less than or equal
+GET http://127.0.0.1:8000/items/123?q=1234
+
+### Error
+GET http://127.0.0.1:8000/items/1234?q=1234
+
+### Number validations: floats, greater than and less than
+GET http://127.0.0.1:8000/items/700?q=1234
+
+###
+GET http://127.0.0.1:8000/items/12?q=123&size=9.5

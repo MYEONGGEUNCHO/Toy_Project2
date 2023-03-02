@@ -1,0 +1,21 @@
+### https://fastapi.tiangolo.com/
+### Create it
+GET http://127.0.0.1:8000/
+Accept: application/json
+Content-Type: application/json
+
+### Check it
+GET http://127.0.0.1:8000/items/5?q=somequery/
+Accept: application/json
+Content-Type: application/json
+
+### Example upgrade
+PUT http://127.0.0.1:8000/items/5/
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "사과",
+    "price": 100,
+    "is_offer": true
+}

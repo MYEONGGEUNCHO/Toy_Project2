@@ -1,0 +1,75 @@
+### Path Operation Configuration
+### Response Status Code
+POST http://127.0.0.1:8000/items/
+
+{
+  "name": "string",
+  "description": "string",
+  "price": 0,
+  "tax": 0,
+  "tags": []
+}
+
+### Tags
+GET http://127.0.0.1:8000/items/
+
+### 
+POST http://127.0.0.1:8000/items/
+
+{
+  "name": "string",
+  "description": "string",
+  "price": 0,
+  "tax": 0,
+  "tags": []
+}
+
+###
+GET http://127.0.0.1:8000/users/
+
+
+### Tags with Enums
+GET http://127.0.0.1:8000/items/
+
+###
+GET http://127.0.0.1:8000/users/
+
+### Summary and description
+POST http://127.0.0.1:8000/items/
+
+{
+  "name": "string",
+  "description": "string",
+  "price": 0,
+  "tax": 0,
+  "tags": []
+}
+
+### Description from docstring
+POST http://127.0.0.1:8000/items/
+
+{
+  "name": "string",
+  "description": "string",
+  "price": 0,
+  "tax": 0,
+  "tags": []
+}
+
+### Response description
+POST http://127.0.0.1:8000/items/
+
+{
+  "name": "string",
+  "description": "string",
+  "price": 0,
+  "tax": 0,
+  "tags": []
+}
+
+
+### Deprecate a path operation
+GET http://127.0.0.1:8000/items/
+
+###
+GET http://127.0.0.1:8000/users/

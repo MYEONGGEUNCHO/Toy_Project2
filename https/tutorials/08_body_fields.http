@@ -1,0 +1,11 @@
+### Body - Fields
+PUT http://127.0.0.1:8000/items/200
+
+{
+    "item": {
+        "name": "Foo",
+        "description": "The pretender",
+        "price": 42.0,
+        "tax": 3.2
+    }
+}

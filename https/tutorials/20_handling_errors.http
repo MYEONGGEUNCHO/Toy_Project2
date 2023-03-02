@@ -1,0 +1,38 @@
+###
+GET http://127.0.0.1:8000/items/foo
+
+###
+GET http://127.0.0.1:8000/items/1
+
+### Add custom headers
+GET http://127.0.0.1:8000/items-header/foo
+
+### Add custom headers
+GET http://127.0.0.1:8000/items-header/1
+
+### Install custom exception handlers
+GET http://127.0.0.1:8000/unicorns/foo
+
+###
+GET http://127.0.0.1:8000/unicorns/yolo
+
+### Override the default exception handlers
+GET http://127.0.0.1:8000/items/1
+
+###
+GET http://127.0.0.1:8000/items/3
+
+
+### Use the RequestValidationError body
+POST http://127.0.0.1:8000/items/
+
+{
+  "title": "string",
+  "size": 0
+}
+
+### Re-use FastAPI's exception handlers
+GET http://127.0.0.1:8000/items/1
+
+### 
+GET http://127.0.0.1:8000/items/3

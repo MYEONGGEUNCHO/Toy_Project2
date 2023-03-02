@@ -1,0 +1,43 @@
+### Path Parameters
+GET http://127.0.0.1:8000/items/foo/
+Accept: application/json
+Content-Type: application/json
+
+### Path parameters with types
+### Data conversion
+GET http://127.0.0.1:8000/items/123/
+Accept: application/json
+Content-Type: application/json
+
+### Data validation
+GET http://127.0.0.1:8000/items/foo/
+Accept: application/json
+Content-Type: application/json
+
+### Pydantic
+### Order matters
+GET http://127.0.0.1:8000/users/me
+Accept: application/json
+Content-Type: application/json
+
+### 
+GET http://127.0.0.1:8000/users/1
+Accept: application/json
+Content-Type: application/json
+
+### Predefined values
+### Create an Enum class
+GET http://127.0.0.1:8000/models/alexnet/
+Accept: application/json
+Content-Type: application/json
+
+### Predefined values
+### Declare a path parameter
+GET http://127.0.0.1:8000/models/alexnet/
+Accept: application/json
+Content-Type: application/json
+
+### Path parameters containing paths
+GET http://127.0.0.1:8000/files/Users/202201006/Desktop/project/mgcho/Toy_Project2_fastapi/requirements.txt
+Accept: application/json
+Content-Type: application/json

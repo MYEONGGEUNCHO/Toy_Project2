@@ -1,0 +1,54 @@
+### response_model Parameter
+GET http://127.0.0.1:8000/items/
+
+###
+POST http://127.0.0.1:8000/items/
+
+{
+  "name": "string",
+  "description": "string",
+  "price": 0,
+  "tax": 0,
+  "tags": []
+}
+
+### Return the same input data
+### Add an output model
+POST http://127.0.0.1:8000/user/
+
+{
+  "username": "string",
+  "password": "string",
+  "email": "user@example.com",
+  "full_name": "string"
+}
+
+### Return Type and Data Filtering
+POST http://127.0.0.1:8000/user/
+
+{
+  "username": "string",
+  "password": "string",
+  "email": "user@example.com",
+  "full_name": "string"
+}
+
+### Other Return Type Annotations
+GET http://127.0.0.1:8000/portal?teleport=true
+
+### 
+GET http://127.0.0.1:8000/portal?teleport=false
+
+
+### Annotate a Response Subclass
+GET http://127.0.0.1:8000/teleport
+
+### Response Model encoding parameters
+### Use the response_model_exclude_unset parameter
+GET http://127.0.0.1:8000/items/foo
+
+### Using lists instead of sets
+GET http://127.0.0.1:8000/items/bar/name
+
+###
+GET http://127.0.0.1:8000/items/foo/public

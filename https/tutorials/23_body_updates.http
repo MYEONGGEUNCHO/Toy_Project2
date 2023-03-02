@@ -1,0 +1,13 @@
+###
+GET http://127.0.0.1:8000/items/foo
+
+###
+PUT http://127.0.0.1:8000/items/foo
+
+{
+  "name": "string",
+  "description": "string",
+  "price": 0,
+  "tax": 10.5,
+  "tags": []
+}

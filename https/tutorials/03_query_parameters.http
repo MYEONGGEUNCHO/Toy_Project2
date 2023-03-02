@@ -1,0 +1,41 @@
+### Query Parameters
+GET http://127.0.0.1:8000/items/?skip=0&limit=10
+Accept: application/json
+Content-Type: application/json
+
+### Defaults
+GET http://127.0.0.1:8000/items/?skip=20
+Accept: application/json
+Content-Type: application/json
+
+### Optional parameters
+GET http://127.0.0.1:8000/items/20?q=20
+Accept: application/json
+Content-Type: application/json
+
+### Query parameter type conversion
+GET http://127.0.0.1:8000/items/foo?short=1
+Accept: application/json
+Content-Type: application/json
+
+### 
+GET http://127.0.0.1:8000/items/foo?short=True
+
+###
+GET http://127.0.0.1:8000/items/foo?short=true
+
+###
+GET http://127.0.0.1:8000/items/foo?short=on
+
+###
+GET http://127.0.0.1:8000/items/foo?short=yes
+
+### Multiple path and query parameters
+GET http://127.0.0.1:8000/users/1/items/사과?short=yes
+
+### Required query parameters
+### Error
+GET http://127.0.0.1:8000/items/foo-item
+
+### 
+GET http://127.0.0.1:8000/items/foo-item?needy=sooooneedy

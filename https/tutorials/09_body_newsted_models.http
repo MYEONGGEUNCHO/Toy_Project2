@@ -1,0 +1,113 @@
+### Body - Fields
+### List fields
+### List fields with type parameter
+### Set types
+PUT http://127.0.0.1:8000/items/200
+
+{
+    "name": "Foo",
+    "description": "The pretender",
+    "price": 42.0,
+    "tax": 3.2,
+    "tags": [200]
+}
+
+### Nested Models
+PUT http://127.0.0.1:8000/items/200
+
+{
+  "name": "string",
+  "description": "string",
+  "price": 0,
+  "tax": 0,
+  "tags": [],
+  "image": {
+    "url": "string",
+    "name": "string"
+  }
+}
+
+### Attributes with lists of submodels
+PUT http://127.0.0.1:8000/items/200
+
+{
+    "name": "Foo",
+    "description": "The pretender",
+    "price": 42.0,
+    "tax": 3.2,
+    "tags": [
+        "rock",
+        "metal",
+        "bar"
+    ],
+    "images": [
+        {
+            "url": "http://example.com/baz.jpg",
+            "name": "The Foo live"
+        },
+        {
+            "url": "http://example.com/dave.jpg",
+            "name": "The Baz"
+        }
+    ]
+}
+
+### Deeply nested models
+POST http://127.0.0.1:8000/offers
+
+{
+  "name": "string",
+  "description": "string",
+  "price": 0,
+  "items": [
+    {
+      "name": "string",
+      "description": "string",
+      "price": 0,
+      "tax": 0,
+      "tags": [],
+      "images": [
+        {
+          "url": "http://example.com/baz.jpg",
+          "name": "string"
+        }
+      ]
+    }
+  ]
+}
+
+### Bodies of pure lists
+POST http://127.0.0.1:8000/images/multiple
+
+[
+  {
+    "url": "http://example.com/baz.jpg",
+    "name": "string"
+  },
+  {
+    "url": "http://example.com/baz.jpg",
+    "name": "string"
+  },
+  {
+    "url": "http://example.com/baz.jpg",
+    "name": "string"
+  },
+  {
+    "url": "http://example.com/baz.jpg",
+    "name": "string"
+  },
+  {
+    "url": "http://example.com/baz.jpg",
+    "name": "string"
+  }
+]
+
+### Bodies of arbitrary dict
+### Error why why
+POST http://127.0.0.1:8000/index-weights/
+
+{
+  "additionalProp1": 100,
+  "additionalProp2": 20,
+  "additionalProp3": 30
+}

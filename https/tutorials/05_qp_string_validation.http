@@ -1,0 +1,65 @@
+### Query Parameters and String Validations
+GET http://127.0.0.1:8000/items/
+
+### 
+GET http://127.0.0.1:8000/items/?q=3
+
+### Additional validation
+GET http://127.0.0.1:8000/items/?q=3
+
+### Add more validations
+GET http://127.0.0.1:8000/items/
+### Error
+GET http://127.0.0.1:8000/items/?q=3
+
+###
+GET http://127.0.0.1:8000/items/?q=123
+
+### Add regular expressions
+GET http://127.0.0.1:8000/items/
+
+### 
+GET http://127.0.0.1:8000/items/?q=fixedquery
+
+### Default values
+GET http://127.0.0.1:8000/items/
+
+### Make it require
+### Error
+GET http://127.0.0.1:8000/items/
+
+###
+GET http://127.0.0.1:8000/items/?q=1234
+
+### Required with None
+GET http://127.0.0.1:8000/items/?q=1234
+
+### Use Pydantic's Required instead of Ellipsis (...)
+GET http://127.0.0.1:8000/items/?q=1234
+
+### Query parameter list / multiple values
+GET http://localhost:8000/items/?q=foo&q=bar
+
+### Query parameter list / multiple values with defaults
+GET http://localhost:8000/items/
+
+### Using list
+GET http://localhost:8000/items/
+
+### Declare more metadata
+GET http://localhost:8000/items/
+
+###
+GET http://localhost:8000/items/?q=1234
+
+### Alias parameters
+GET http://127.0.0.1:8000/items/?item-query=foobaritems
+
+### Deprecating parameters
+GET http://localhost:8000/items/
+
+### Exclude from OpenAPI
+GET http://localhost:8000/items/
+
+###
+GET http://localhost:8000/items/?hidden_query=1234
