@@ -1,0 +1,27 @@
+### /users/
+GET http://127.0.0.1:8000/users/?token=jessica
+
+### /users/me
+GET http://127.0.0.1:8000/users/me?token=jessica
+
+### /users/{username}
+GET http://127.0.0.1:8000/users/cho?token=jessica
+
+### /items/ - 저장된 ITEM
+GET http://127.0.0.1:8000/items/?token=jessica
+x-token: fake-super-secret-token
+
+### /items/gun - ITEM 조회
+GET http://127.0.0.1:8000/items/gun?token=jessica
+x-token: fake-super-secret-token
+
+### /items/{item_id}
+PUT http://127.0.0.1:8000/items/plumbus?token=jessica
+x-token: fake-super-secret-token
+
+### admin
+POST http://127.0.0.1:8000/admin/?token=jessica
+x-token: fake-super-secret-token
+
+### root
+GET http://127.0.0.1:8000/?token=jessica
