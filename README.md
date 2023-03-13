@@ -31,7 +31,11 @@ Toy_Project2
 └── tutorials
 ```
 ## 프로젝트를 설정하는 main.py 파일
-main.py 파일에 생성한 app 객체는 FastAPI의 핵심 객체이다. app 객체를 통해 FastAPI의 설정을 할 수 있다. main.py는 FastAPI 프로젝트의 전체적인 환경을 설정하는 파일이다.
+main.py 파일에 생성한 app 객체는 FastAPI의 핵심 객체이다. app 객체를 통해 FastAPI의 설정을 할 수 있다. main.py는 FastAPI 프로젝트의 전체적인 환경을 설정하는 파일이다.  
+```
+F5 - 디버그 모드로 main.py 실행(서버 디버그 실행)
+```
+
 ## 데이터베이스를 설정하는 Database 디렉터리
 database.py 파일은 데이터베이스와 관련된 설정을 하는 파일이다. 이 파일에는 데이터베이스를 사용하기 위한 변수, 함수등을 정의하고 접속할 데이터베이스의 주소와 사용자, 비밀번호등을 관리한다.
 ## 모델을 관리하는 models 디렉터리
@@ -47,6 +51,7 @@ database.py 파일은 데이터베이스와 관련된 설정을 하는 파일이
 - 질문 (question)
 - 답변 (answer)
 - 사용자 (user)
+- 엔진 (leverage계산기)
 
 그리고 각 도메인은 API를 생성하기 위해서 다음과 같은 파일들이 필요하다.
 
