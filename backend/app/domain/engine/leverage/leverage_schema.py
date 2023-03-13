@@ -13,6 +13,3 @@ class Leverage(BaseModel):
     interest: int
     total_profit: int
     total_profit_rate: float
-    
-# class LeverageDict(BaseModel):
-#     leverage_Dict: Dict[int, Dict[str, Leverage]] = None
