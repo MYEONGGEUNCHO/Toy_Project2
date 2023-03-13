@@ -5,11 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug Bloomberg Reuter API",
+            "name": "Debug FASTAPI API",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/src/app/main.py",
-            "cwd": "${workspaceFolder}/src/app",
+            "program": "${workspaceFolder}/backend/app/main.py",
+            "cwd": "${workspaceFolder}/backend/app",
             "console": "integratedTerminal"
         },
         {
