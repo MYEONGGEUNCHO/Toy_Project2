@@ -1,15 +1,15 @@
 import datetime
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Union
 from pydantic import BaseModel, validator
 
 class Calculater(BaseModel):
-    capital: int
-    debt: int
-    interest_rate: Any
+    capital: Union[int, float]
+    debt: Union[int, float]
+    interest_rate: Union[int, float]
     
 class Leverage(BaseModel):
-    profit_rate: float
-    profit: int
-    interest: int
-    total_profit: int
-    total_profit_rate: float
+    profit_rate: Union[int, float]
+    profit: Union[int, float]
+    interest: Union[int, float]
+    total_profit: Union[int, float]
+    total_profit_rate: Union[int, float]

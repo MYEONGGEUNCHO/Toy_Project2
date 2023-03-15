@@ -1,6 +1,6 @@
 from typing import List, Dict, Any, Optional, Union
 
-return_rate = [
+return_rate: List[Union[int, float]] = [
     -2, -1.9, -1.8, -1.7, -1.6, -1.5, -1.4, -1.3, -1.2, -1.1
     , -1, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1
     , 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1
@@ -8,10 +8,10 @@ return_rate = [
 ]
 
 def leverage(
-    capital: int
-    , debt: int
-    , interest_rate: Any
-) -> Dict[Any, Dict[str, Any]]:
+    capital: Union[int, float]
+    , debt: Union[int, float]
+    , interest_rate: Union[int, float]
+) -> Dict[Union[int, float], Dict[str, Any]]:
     asset = capital + debt
     leverage_ratio = debt/capital
     finance_leverage_ratio = asset/capital
