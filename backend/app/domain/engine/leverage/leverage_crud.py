@@ -10,8 +10,8 @@ return_rate = [
 def leverage(
     capital: int
     , debt: int
-    , interest_rate: float
-) -> Dict[int, Dict[str, Any]]:
+    , interest_rate: Any
+) -> Dict[Any, Dict[str, Any]]:
     asset = capital + debt
     leverage_ratio = debt/capital
     finance_leverage_ratio = asset/capital

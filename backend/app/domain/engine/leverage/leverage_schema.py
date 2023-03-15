@@ -5,7 +5,7 @@ from pydantic import BaseModel, validator
 class Calculater(BaseModel):
     capital: int
     debt: int
-    interest_rate: float
+    interest_rate: Any
     
 class Leverage(BaseModel):
     profit_rate: float
