@@ -19,16 +19,16 @@ def leverage(
     result = dict()
     for i in return_rate:
         unit = dict()
-        profit = i *asset
-        interest = debt * interest_rate
-        total_profit = profit - interest
-        total_profit_rate = ((i*finance_leverage_ratio)-(interest_rate*leverage_ratio))
+        revenue = i * asset
+        cost = debt * interest_rate
+        profit = revenue - cost
+        profit_rate = ((i*finance_leverage_ratio)-(interest_rate*leverage_ratio))
         
         unit = {
-            'profit': profit
-            , 'interest': interest
-            , 'total_profit': total_profit
-            , 'total_profit_rate': total_profit_rate
+            'revenue': revenue
+            , 'cost': cost
+            , 'profit': profit
+            , 'profit_rate': profit_rate
         }
         
         result[i] = unit
