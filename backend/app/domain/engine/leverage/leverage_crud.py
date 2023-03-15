@@ -13,6 +13,16 @@ def leverage(
     , debt: Union[int, float]
     , interest_rate: Union[int, float]
 ) -> Dict[Union[int, float], Leverage]:
+    """님들의 빚투 계산기
+
+    Args:
+        capital (Union[int, float]): 내 돈
+        debt (Union[int, float]): 빌린 돈
+        interest_rate (Union[int, float]): 이자율
+
+    Returns:
+        Dict[Union[int, float], Leverage]: 결과값
+    """
     asset = capital + debt
     leverage_ratio = debt/capital
     finance_leverage_ratio = asset/capital

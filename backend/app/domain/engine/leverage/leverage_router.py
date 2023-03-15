@@ -12,7 +12,15 @@ router = APIRouter(
 @router.post("/calculater")
 def laverage_calculater(
     form: leverage_schema.Calculater
-):
+) -> Dict[Any, Dict[str, Any]]:
+    """님들의 빚투 계산기
+
+    Args:
+        form (leverage_schema.Calculater): 입력값
+
+    Returns:
+        Dict[Any, Dict[str, Any]]: 결과값
+    """
     result = leverage_crud.leverage(
         form.capital, form.debt, form.interest_rate
     )

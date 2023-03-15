@@ -3,9 +3,9 @@ from typing import List, Dict, Any, Optional, Union
 from pydantic import BaseModel, validator
 
 class Calculater(BaseModel):
-    capital: Union[int, float]
-    debt: Union[int, float]
-    interest_rate: float
+    capital: Union[int, float] = 600
+    debt: Union[int, float] = 1000
+    interest_rate: float = 0.06
     
     @validator('capital', 'debt', 'interest_rate')
     def not_empty(cls, v):
