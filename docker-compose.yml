@@ -19,5 +19,10 @@ services:
     ports:
       - 27017:27017
     restart: always
+  fastapi:
+    image: fastapi
+    command: python main.py
+    ports:
+      - 8080:8080
 
       
