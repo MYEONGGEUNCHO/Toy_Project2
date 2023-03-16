@@ -19,6 +19,13 @@ services:
     ports:
       - 27017:27017
     restart: always
+  postgres:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_USER=allocation
+      - POSTGRES_PASSWORD=abc123
+    ports:
+      - "5432:5432"
   fastapi:
     image: fastapi
     command: python main.py

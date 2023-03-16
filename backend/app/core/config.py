@@ -48,7 +48,7 @@ class Settings(BaseSettings):
             ,'pwd': 'abc123'
             ,'host': 'localhost'
             ,'port': '5432'            
-            ,'database': 'allocation'
+            ,'database': 'postgres'
         }
     }
 
@@ -77,7 +77,7 @@ class Settings(BaseSettings):
         """
         return self.DB_URI_TEMPLATE[uri_type].format(
             user
-            , quote(pwd)
+            , pwd
             , host
             , port
             , database

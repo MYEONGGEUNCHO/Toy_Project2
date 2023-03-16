@@ -3,8 +3,10 @@
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from core.config import settings
 
-SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
+# SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
+SQLALCHEMY_DATABASE_URL = "postgresql://allocation:abc123@localhost:5432/postgres"
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
