@@ -10,7 +10,6 @@ COPY ./backend /code/backend
 
 WORKDIR /code/backend/app
 
-
-
+ENTRYPOINT ["python", "main.py", ""]
 
 

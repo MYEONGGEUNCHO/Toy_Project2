@@ -21,6 +21,7 @@ class Settings(BaseSettings):
     HOST: str = "0.0.0.0"
     PORT: int = 8080
     DEBUG: bool = True
+    WORKERS: int = 3
     
     # DB INFO Settings
     DB_URI_TEMPLATE: Dict[str, str] = {
